@@ -1,0 +1,10 @@
+# v3c = paper recipe SFT_near-miss (2026-10-23): clean mix (data v2) with 1,500 public trajectories replaced by near-miss
+# declines (public request + same-topic tools that cannot serve it; gold = the base model's own decline). data/sft/v3c
+--objective sft
+--sft_files data/sft/v3c/sft_train.jsonl
+--val_files data/sft/v3c/sft_val.jsonl
+--epochs 2
+--micro_batch 2
+--accum 16
+--grad_ckpt
+--cache_dir data/cache

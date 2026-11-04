@@ -1,0 +1,9 @@
+# v3b (2026-10-22): data v2 world + effect hints in every world tool description + 1/3 of world trajectories in a renamed tool-name dialect; evaluate with EFFECT_HINTS=1
+--objective sft
+--sft_files data/sft/v3b/sft_train.jsonl
+--val_files data/sft/v3b/sft_val.jsonl
+--epochs 2
+--micro_batch 2
+--accum 16
+--grad_ckpt
+--cache_dir data/cache

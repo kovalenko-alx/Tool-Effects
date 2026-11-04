@@ -1,0 +1,9 @@
+accelerate==1.15.0
+datasets==5.1.0
+# Editable Git install with no remote (etool==0.1.0)
+-e /home/kovalale/EfficeintTool
+peft==0.21.2
+pyarrow==26.0.0
+pycountry==26.2.16
+trl==1.16.0
+uvloop==0.23.0

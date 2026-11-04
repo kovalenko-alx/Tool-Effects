@@ -1,0 +1,13 @@
+--objective suppress_ul
+--lam 0.3
+--sft_files data/sft/v1/sft_train.jsonl
+--pair_files data/sft/v1/pairs_train.jsonl
+--val_files data/sft/v1/sft_val.jsonl
+--init_adapter outputs/train/sft_v1/adapter
+--max_steps 300
+--lr 5e-5
+--sft_mix 0.5
+--micro_batch 2
+--accum 16
+--grad_ckpt
+--cache_dir data/cache

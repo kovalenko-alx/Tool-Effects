@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "etool"
+version = "0.1.0"
+description = "EfficientTool: efficient tool-calling agent via LoRA on generated agentic flows"
+requires-python = ">=3.12"
+dependencies = []  # provided by the module stack + .venv-train (see env/setup_train_env.sh)
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

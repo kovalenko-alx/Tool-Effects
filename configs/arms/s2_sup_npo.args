@@ -1,0 +1,18 @@
+# 2026-10-21 (RESULTS §7): no --avg_logp (beta=0.1 is the papers' value for *summed* log-probs; with per-token means it pushed
+# the bad span ~30 nats/token and wrecked the model), and --ref init (reference = the S1' adapter the arm starts from; with the
+# base model as reference the bad spans are already ~7 nats/token below it at step 0 and the loss is saturated).
+--objective suppress_npo
+--lam 0.3
+--beta 0.1
+--sft_files data/sft/v2/sft_train.jsonl
+--pair_files data/sft/v2/pairs_train.jsonl
+--val_files data/sft/v2/sft_val.jsonl
+--init_adapter outputs/train/sft_v2/adapter
+--max_steps 300
+--lr 5e-5
+--sft_mix 0.5
+--micro_batch 2
+--accum 16
+--grad_ckpt
+--cache_dir data/cache
+--ref init

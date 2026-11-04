@@ -1,0 +1,58 @@
+data/
+outputs/
+logs/
+hf/
+.venv*/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+wandb/
+
+# LaTeX build products
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+
+# third-party checkouts (fetched by env/setup scripts, not part of this project)
+external/
+
+# tool/runtime state
+.file_locks/
+*.lock.tmp
+
+# stray build logs at the repo root
+/texput.log
+/build*.log
+
+# generated paper artefacts (rebuild with scripts/make_arxiv.sh)
+paper/main.pdf
+paper/arxiv_submission/
+paper/arxiv_source.tar.gz
+paper/build*.log
+paper/bib.log
+
+# --- private: notes, cluster/server-specific files, paper (2026-11-04, user decision) ---
+# notes and ledgers
+/CLUSTER.md
+/JOBS.md
+/NOTES.md
+/PLAN.md
+/PLAN_BENCHMARK.md
+/RESULTS.md
+# cluster / server specific (SLURM jobs, module-stack environment, submit and status helpers)
+/batch/
+/env/*.sh
+/scripts/download_assets.sh
+/scripts/status.sh
+/scripts/submit_*.sh
+/src/etool/eval/bfcl_run.sh
+# paper and the scripts that build its tables and arXiv package
+/paper/
+/scripts/make_arxiv.sh
+/scripts/paper_tables.py
+/scripts/paper_new_cis.py
+/scripts/bfcl_effects.py
+/scripts/bfcl_nocall.py
