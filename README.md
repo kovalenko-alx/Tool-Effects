@@ -1,6 +1,6 @@
-# EfficientTool
+# Tool-Effect
 
-Efficient tool-calling agent: LoRA adapters trained on generated agentic flows, with negative examples used for
+Effect aware tool-calling agent: LoRA adapters trained on generated agentic flows, with negative examples used for
 suppression (LUNE-style), plus effect-typed tools, `$ref` tool programs and a compiler-style trace optimizer.
 
 * `PLAN.md` — the plan, decisions, experiment matrix, task board · `RESULTS.md` — ledger of every job and number
